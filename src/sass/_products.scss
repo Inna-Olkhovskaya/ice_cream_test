@@ -1,0 +1,148 @@
+.product {
+  background-image: url(../images/bg_mobile.jpg);
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  &__label {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    text-align: center;
+    text-transform: uppercase;
+    color: #131313;
+    margin-bottom: 12px;
+  }
+
+  &__title {
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: calc(38 / 30);
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #131313;
+    margin-bottom: 148px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 168px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    border-radius: 24px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 16px;
+    padding-top: 123px;
+
+    &--ice {
+      background: #aec6a5;
+    }
+
+    &--coffee {
+      background: #efd478;
+    }
+
+    &--shake {
+      background: #d6936d;
+    }
+  }
+
+  &__name {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #131313;
+    margin-bottom: 40px;
+    position: relative;
+
+    &--ice::before {
+      content: '';
+      background-image: url(../images/pic_icecream_mobile.jpg);
+      background-position: center;
+      position: absolute;
+      top: -220px;
+      display: block;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin: 0 auto;
+
+      @media screen and (min-width: 480px) {
+        right: 78px;
+      }
+    }
+
+    &--coffee::before {
+      content: '';
+      background-image: url(../images/pic_coffee_mobile.jpg);
+      background-position: center;
+      position: absolute;
+      top: -220px;
+      display: block;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin: 0 auto;
+
+      @media screen and (min-width: 480px) {
+        right: 78px;
+      }
+    }
+
+    &--shake::before {
+      content: '';
+      background-image: url(../images/pic_milkshakes_mobile.jpg);
+      background-position: center;
+      position: absolute;
+      top: -220px;
+      display: block;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin: 0 auto;
+
+      @media screen and (min-width: 480px) {
+        right: 78px;
+      }
+    }
+  }
+
+  &__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(25 / 14);
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #131313;
+    margin-bottom: 101px;
+  }
+
+  &__btn {
+    display: block;
+    margin: 0 auto;
+    background-color: transparent;
+    border: none;
+  }
+}
