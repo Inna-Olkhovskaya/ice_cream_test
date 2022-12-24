@@ -4,6 +4,7 @@
 }
 .about-container {
   width: 100%;
+  padding-top: 60px;
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
@@ -98,18 +99,19 @@
   }
 }
 .about__img {
-  width: 279px;
-  height: 300px;
+  // width: 279px;
+  // height: 279px;
 
   @media screen and (min-width: 768px) {
-    width: 330px;
-    height: 356px;
+    // width: 330px;
+    // height: 330px;
     position: absolute;
+    bottom: 0;
     left: -10px;
   }
   @media screen and (min-width: 1200px) {
-    width: 490px;
-    height: 529px;
+    // width: 490px;
+    // height: 490px;
     position: absolute;
     left: -15px;
     bottom: 0px;
