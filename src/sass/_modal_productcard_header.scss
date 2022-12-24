@@ -48,5 +48,58 @@
     font-weight: 400;
     font-size: 16px;
     line-height: calc(24 / 16);    
-    color: #131313
+    color: #131313;
 }
+
+.list{
+    text-decoration: none;
+}
+
+.product-list{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-items: center;
+    justify-content: center;
+    margin: 83px auto;
+    width: 132px;
+    height: 136px;
+    border: 2px solid #96AF8C;
+    filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+    border-radius: 15px;
+    position: relative;    
+}
+
+
+.product-name {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding-top: 50px;
+    color: #131313;
+    
+}
+
+   /* &--ice::before {
+      content: '';
+      background-image: url(../images/cream_mob.jpg);
+      background-position: center;
+      position: absolute;
+      repeat: no-repeat;
+      top: -220px;
+      display: block;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin: 0 auto;
+
+      @media screen and (min-width: 480px) {
+        right: 78px;
+      }
+    }
+}*/
