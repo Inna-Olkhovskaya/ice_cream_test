@@ -24,22 +24,16 @@
 .benefits-list {
   @media screen and (min-width: 768px) {
     display: flex;
+    gap: 80px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 32px;
   }
 }
 
 .benefits-card {
   text-align: center;
-  @media screen and (min-width: 768px) {
-    &:not(:last-child) {
-      margin-right: 80px;
-    }
-  }
-
-  @media screen and (min-width: 1200px) {
-    &:not(:last-child) {
-      margin-right: 32px;
-    }
-  }
 }
 
 .benefits-items {
