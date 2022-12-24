@@ -1,5 +1,13 @@
 .product {
-  background-image: url(../images/bg_mobile.jpg);
+  background-image: url(../images/bg_products_mobile.jpg);
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/bg_products_tablet.jpg);
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/bg_products_desktop.jpg);
+  }
 
   &__container {
     display: flex;
@@ -7,6 +15,11 @@
     justify-content: center;
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 58px;
+      padding-bottom: 58px;
+    }
   }
 
   &__label {
@@ -19,6 +32,16 @@
     text-transform: uppercase;
     color: #131313;
     margin-bottom: 12px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 22px;
+      line-height: calc(27 / 22);
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 30px;
+      line-height: calc(37 / 30);
+    }
   }
 
   &__title {
@@ -32,22 +55,47 @@
     text-transform: uppercase;
     color: #131313;
     margin-bottom: 148px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 34px;
+      line-height: calc(43 / 34);
+      margin-bottom: 200px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      line-height: calc(45 / 36);
+      margin-bottom: 303px;
+    }
   }
 
   &__list {
     display: flex;
     flex-direction: column;
     gap: 168px;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      gap: 16px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      gap: 29px;
+    }
   }
 
   &__item {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    min-width: 280px;
+    height: 420px;
     border-radius: 24px;
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 16px;
     padding-top: 123px;
+    position: relative;
 
     &--ice {
       background: #aec6a5;
@@ -59,6 +107,110 @@
 
     &--shake {
       background: #d6936d;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 224px;
+      height: 428px;
+      padding-left: 26px;
+      padding-right: 26px;
+      padding-bottom: 12px;
+      padding-top: 108px;
+      box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+      border-radius: 15.7808px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 370px;
+      height: 536px;
+      padding-left: 61px;
+      padding-right: 63px;
+      padding-bottom: 60px;
+      padding-top: 165px;
+      box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+      border-radius: 24px;
+    }
+    &--ice::before {
+      content: '';
+      background-image: url(../images/pic_icecream.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: -26%;
+      display: block;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+
+      @media screen and (min-width: 768px) {
+        top: -28%;
+        right: 5%;
+      }
+
+      @media screen and (min-width: 1200px) {
+        background-image: url(../images/pic_icecream_desktop.jpg);
+        width: 302px;
+        height: 302px;
+        top: -35%;
+        right: 9%;
+      }
+    }
+
+    &--coffee::before {
+      content: '';
+      background-image: url(../images/pic_coffee.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: -26%;
+      display: block;
+      margin: 0 auto;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+
+      @media screen and (min-width: 768px) {
+        top: -28%;
+        right: 5%;
+      }
+
+      @media screen and (min-width: 1200px) {
+        background-image: url(../images/pic_coffee_desktop.jpg);
+        width: 302px;
+        height: 302px;
+        top: -35%;
+        right: 9%;
+      }
+    }
+
+    &--shake::before {
+      content: '';
+      background-image: url(../images/pic_milkshakes.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: -26%;
+      display: block;
+      margin: 0 auto;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+
+      @media screen and (min-width: 768px) {
+        top: -28%;
+        right: 5%;
+      }
+
+      @media screen and (min-width: 1200px) {
+        background-image: url(../images/pic_milkshakes_desktop.jpg);
+        width: 302px;
+        height: 302px;
+        top: -35%;
+        right: 9%;
+      }
     }
   }
 
@@ -72,58 +224,15 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #131313;
-    margin-bottom: 40px;
-    position: relative;
 
-    &--ice::before {
-      content: '';
-      background-image: url(../images/pic_icecream_mobile.jpg);
-      background-position: center;
-      position: absolute;
-      top: -220px;
-      display: block;
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      margin: 0 auto;
-
-      @media screen and (min-width: 480px) {
-        right: 78px;
-      }
+    @media screen and (min-width: 768px) {
+      font-size: 22px;
+      line-height: calc(27 / 22);
     }
 
-    &--coffee::before {
-      content: '';
-      background-image: url(../images/pic_coffee_mobile.jpg);
-      background-position: center;
-      position: absolute;
-      top: -220px;
-      display: block;
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      margin: 0 auto;
-
-      @media screen and (min-width: 480px) {
-        right: 78px;
-      }
-    }
-
-    &--shake::before {
-      content: '';
-      background-image: url(../images/pic_milkshakes_mobile.jpg);
-      background-position: center;
-      position: absolute;
-      top: -220px;
-      display: block;
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      margin: 0 auto;
-
-      @media screen and (min-width: 480px) {
-        right: 78px;
-      }
+    @media screen and (min-width: 1200px) {
+      font-size: 30px;
+      line-height: calc(37 / 30);
     }
   }
 
@@ -136,7 +245,11 @@
     text-align: center;
     letter-spacing: 0.04em;
     color: #131313;
-    margin-bottom: 101px;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      line-height: calc(28 / 16);
+    }
   }
 
   &__btn {
