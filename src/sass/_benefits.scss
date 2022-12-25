@@ -74,13 +74,16 @@
   height: 50px;
   border-radius: 50%;
   background-color: #f8d24e;
-  background-image: url(../images/symbol-defs.svg#icon-cow);
+  background-image: url(../images/cow.png);
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 16px;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
   }
 }
 
@@ -90,13 +93,16 @@
   height: 50px;
   border-radius: 50%;
   background-color: #f8d24e;
-  background-image: url(../images/symbol-defs.svg#icon-weight);
+  background-image: url(../images/weight.png);
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 16px;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
   }
 }
 
@@ -106,13 +112,16 @@
   height: 50px;
   border-radius: 50%;
   background-color: #f8d24e;
-  background-image: url(../images/symbol-defs.svg#icon-icecream);
+  background-image: url(../images/ice-crema.png);
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 16px;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
   }
 }
 
