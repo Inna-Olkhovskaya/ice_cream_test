@@ -16,27 +16,31 @@
                             <use class="product__icon" href="./images/symbol-defs.svg#icon-arrow"></use>
                         </svg>
                     </button> -->
-                </li>
-                <!--<li class="product__item product__item--coffee">
-                    <h3 class="product__name product__name--coffee">ice coffee</h3>
-                    
-                    <button type="button" class="product__btn" data-modal-open>
+                </li>               
+                <li class="product-item">
+                    <p class="product-name icon-ice">ice coffee</p>
+                    <!--<button type="button" class="product__btn" data-modal-open>
                         <svg width="40" height="16">
                             <use class="product__icon" href="./images/symbol-defs.svg#icon-arrow"></use>
                         </svg>
-                    </button>
+                    </button> -->
                 </li>
-                <li class="product__item product__item--shake">
-                    <h3 class="product__name product__name--shake">milkshakes</h3>
+                <li class="product-item">
+                    <p class="product-name icon-ice">milkshake</p>
                    
-                    <button type="button" class="product__btn" data-modal-open>
-                        <svg width="40" height="16">
-                            <use class="product__icon" href="./images/symbol-defs.svg#icon-arrow"></use>
-                        </svg>
-                    </button>
-                </li>
+                </li>               
             </ul>
-    
+        <form class="modal-form">
+            <input type="text" name="user-name" class="modal-input" placeholder="Name" required>
+            <input type="tel" name="user-tel" class="modal-input" placeholder="Phone" required title="+380 (96) 555-55-55" pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" ">
+            <div class="modal-fild">
+                <label for="user-text" class="input-label"></label> 
+                <textarea name="user-text" id="user-text" class="modal-content" placeholder="Content"></textarea>
+                <button type="submit" class="modal-button">Submit</button>
+            </div>        
+        </form>
+        
+        
             
         </div>
     
