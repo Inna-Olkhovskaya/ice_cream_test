@@ -24,20 +24,20 @@
 .customer-review-overlay {
     background-image: linear-gradient(
     to bottom, #84A178 10%,transparent 1%),
-    url(../images/bg_mobile.jpg);
+    url(../images/bg_products_mobile.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     
     @media screen and (min-width:768px) {
         background-image: linear-gradient(
         to bottom, #84A178 10%,transparent 1%),
-        url(../images/bg_mobile.jpg);
+        url(../images/bg_products_tablet.jpg);
     }
 
     @media screen and (min-width:1200px) {
         background-image: linear-gradient(
             to bottom, #84A178 10%,transparent 1%),
-            url(../images/bg_mobile.jpg); 
+            url(../images/bg_products_desktop.jpg); 
     }
     
   }
