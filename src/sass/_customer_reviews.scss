@@ -1,25 +1,4 @@
-.container{
-    max-width: 1200px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-right: auto;
-    margin-left: auto;
 
-
-    @media screen and (min-width:768px) {
-    padding-left: 32px;
-    padding-right: 32px;
-      
-    }
-
-    @media screen and (min-width:1200px) {
-    padding-left: 93px;
-    padding-right: 93px;
-
-    padding-right: 93px;
-       
-    }
-}
 
 .customer-review-overlay {
     background-image: linear-gradient(
