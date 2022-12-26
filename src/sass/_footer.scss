@@ -1,41 +1,12 @@
 .footer-section {
-    width: 100%;
-    margin: 0 auto;
-    height: auto;
-
-}
-
-@media screen and (min-width: 480px) {
-    .footer-section {
-        max-width: 767px;
-        height: auto;
-    }
-
-}
-
-@media screen and (min-width: 768px) {
-    .footer-section {
-        max-width: 768px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .footer-section {
-        max-width: 1200px;
-    }
-}
-
-.footer-container {
-
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
     background-color: #84A178;
+
 }
-
-
 @media screen and (min-width: 768px) {
-    .footer-container {
+    .footer-section {
         padding-left: 32px;
         padding-right: 32px;
         padding-bottom: 12px;
@@ -43,10 +14,37 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .footer-container {
+    .footer-section {
         padding-left: 16px;
         padding-right: 16px;
         padding-bottom: 12px;
+    }
+}
+.footer-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 479px) {
+    .footer-container {
+       width: 100%;
+       margin: 0 auto;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .footer-container {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer-container {
+         max-width: 1200px;
+         margin: 0 auto;
+        
     }
 }
 
