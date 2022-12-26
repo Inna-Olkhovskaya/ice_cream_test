@@ -261,6 +261,7 @@ header {
         color 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
 &:hover {
         background-color: rgba(10, 136, 23, 1);
+        cursor: pointer;
     }
 
     &:focus {
@@ -315,6 +316,7 @@ header {
 
          &:hover {
         background-color: rgba(10, 136, 23, 1);
+        cursor: pointer;
                 }
         &:focus {
             background-color: rgba(10, 136, 23, 1);
