@@ -126,16 +126,7 @@ p {
         color: #F8D24E;
 
         transition: color 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
-        &:hover {
-                color:#0A8817;;
-            }
-        &:focus{
-            color:#FCFCFC;
-        }   
-        
-        &:disabled{
-            color: #ABABAB;
-        }
+    
 
 
         @media screen and (min-width:1200px) {
@@ -188,6 +179,16 @@ p {
         }
     }
 }
+.hero-link:hover{
+        
+                color: #0A8817;
+                cursor: pointer;}
+.hero-link:focus{
+              color: #FCFCFC;
+}
+ .hero-link:disabled {
+                color: #ABABAB;
+            }
 
 .hero-link-products {
     display: block;
@@ -203,25 +204,27 @@ p {
 
     transition: border 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 
     color 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
- &:hover{
-    border: 2px solid rgba(10, 136, 23, 1);
-    cursor:pointer;
- }
-
- &:focus{
-    border: 2px solid rgba(10, 136, 23, 1);
-    color:#FCFCFC;
- }
-
- &:disabled{
-    border:2px solid rgba(171, 171, 171, 1);
- }
+ 
     @media screen and (min-width:1200px) {
         min-width: 134px;
         height: 42px;
         font-size: 14px;
 
     }
+}
+
+.hero-link-products:hover{
+    border: 2px solid rgba(10, 136, 23, 1);
+        cursor: pointer;
+}
+
+.hero-link-products:focus{
+    border: 2px solid rgba(10, 136, 23, 1);
+        color: #FCFCFC;
+}
+
+.hero-link-products:disabled{
+    border: 2px solid rgba(171, 171, 171, 1);
 }
 
 
@@ -233,6 +236,7 @@ p {
     z-index: 2;
     width: 177px;
     height: 217px;
+
     transition: transform 500ms cubic-bezier(0.19, 1, 0.22, 1);
 
 
