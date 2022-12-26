@@ -1,4 +1,4 @@
-    <div class="backdrop" data-modal-ice>
+    <div class="backdrop is-hidden" data-modal-ice>
         <div class="modal">
             <button type="button" class="modal-close" data-modal-ice-close>
                 <svg class="modal-close-icon" width="20" height="20">
@@ -10,39 +10,25 @@
             <p class="modal-title">Buy now</p>
             <ul class="product-list">
                 <li class="product-item">                    
-                    <input type="checkbox" class="product-input hide" name="fillter" id="icecream"/>
+                    <input type="checkbox" class="product-input hide" name="filter" id="icecream">
                     <label for="icecream" class="product-btn">ice cream</label>
                 </li>
                 <li class="product-item">                    
-                    <input type="checkbox" class="product-input hide" name="fillter" id="icecoffee"/>
+                    <input type="checkbox" class="product-input hide" name="filter" id="icecoffee">
                     <label for="icecoffee" class="product-btn">ice coffee</label>
                 </li>
                 <li class="product-item">                    
-                    <input type="checkbox" class="product-input hide" name="fillter" id="milkshake"/>
+                    <input type="checkbox" class="product-input hide" name="filter" id="milkshake">
                     <label for="milkshake" class="product-btn">milkshake</label>
-                </li>
-
-                <!-- <li class="product-item">
-                    <p class="product-name icon-ice">ice cream</p>
-                    
                 </li>               
-                <li class="product-item">
-                    <p class="product-name icon-ice">ice coffee</p>
-                    
-                </li>
-                <li class="product-item">
-                    <p class="product-name icon-ice">milkshake</p>
-                   
-                </li> -->               
             </ul>
         <form class="modal-product-form">
             <input type="text" name="user-name" class="modal-product-input" placeholder="Name" required>
-            <input type="tel" name="user-tel" class="modal-product-input" placeholder="Phone" required title="+380 (96) 555-55-55" pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" ">
+            <input type="tel" name="user-tel" class="modal-product-input" placeholder="Phone" required title="+380 (96) 555-55-55" pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"  >
             <div class="modal-fild">
                 <label for="user-text" class="input-label"></label> 
                 <textarea name="user-text" id="user-text" class="modal-product-content" placeholder="Content"></textarea>
             </div>
-
         </form>
         <button type="submit" class="modal-product-button">Submit</button>    
          </div>    
