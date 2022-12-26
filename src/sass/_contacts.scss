@@ -1,0 +1,294 @@
+.contacts{
+    padding-top: 40px;
+    padding-bottom: 60px;
+    background-color: #84A178;
+    @media screen and (min-width: 768px) {
+        padding-top: 80px;
+        padding-bottom: 40px;
+      }
+    
+      @media screen and (min-width: 1200px) {
+        padding-top: 100px;
+        padding-bottom: 120px;
+      }
+}
+.container-contacts{
+    @media screen and (min-width: 768px) {
+        padding-left: 32px;
+        padding-right: 32px;
+      }
+      @media screen and (min-width: 1200px) {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+      
+    
+}
+.conracts-wrap{
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    row-gap: 16px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-flow: nowrap;
+        gap: 32px;
+      }
+}
+.contacts-cafe{
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 24px;
+    padding-left: 32px;
+    padding-right: 32px;
+    background: #FCFCFC;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 32px) / 3);
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-bottom: 40px;
+      }
+      @media screen and (min-width: 1200px) {
+        width: calc((100% - 64px) / 3);
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+}
+
+  .contacts-sub-title {
+    margin-bottom: 20px;
+    padding: 4px 22px;
+    background: #F8D24E;
+    border-radius: 4px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+
+
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #131313;
+    @media screen and (min-width: 768px) {
+        padding: 4px 13px;
+        margin-bottom: 32px;
+        font-size: 16px;
+        line-height: 140%;
+      }
+      @media screen and (min-width: 1200px) {
+        padding: 4px 14px;
+        margin-bottom: 36px;
+      }
+}
+  .contacts-city{
+    margin-bottom: 8px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 186%;
+letter-spacing: 0.04em;
+color: #131313;
+@media screen and (min-width: 768px) {
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  }
+  .contacts-link{ 
+
+text-decoration: none;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 183%;
+letter-spacing: 0.04em;
+color: #D6936D;
+&:hover{ 
+    color: #D6936D;
+ text-decoration: underline;
+ }
+ &:focus{
+    color: #D6936D;
+ text-decoration: underline;
+ }
+@media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
+  }
+  .contacts-workingdays-text{
+    
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 186%;
+color: #131313;
+@media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
+}
+
+  .contacts-workingdays-time{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 186%;
+color: #ABABAB;
+@media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
+
+  }
+  
+  .contacts-workingdays{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-top: 1px solid #E1E1E1;
+    border-bottom: 1px solid #E1E1E1;
+    @media screen and (min-width: 768px) {
+        margin-top: 32px;
+        margin-bottom: 32px;
+        padding-top: 32px;
+    padding-bottom: 32px;
+      }
+  }
+  .contacts-workingdays-item{
+    margin-bottom: 8px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 12px;
+      }
+  }
+  .contacts-main-item:not(:last-child){
+    margin-bottom: 6px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 4px;
+      }
+  }
+  .contacts-button{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    row-gap: 16px;
+    margin-top: 20px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-flow: nowrap;
+        gap: 16px;
+        justify-content: center;
+        margin-top: 40px;
+      }
+      @media screen and (min-width: 1200px) {
+        margin-top: 60px;
+      }
+  }
+  .contacts-button-franchise{
+    margin: 0;
+    width: 196px;
+    height: 42px;
+    display: inline-block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: transparent;
+    
+   
+    border: 2px solid #F8D24E;
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    &:hover{ 
+        border: 2px solid #0A8817;
+        
+     }
+     &:focus{
+        color: #FFFFFF;
+        border: 2px solid #0A8817;
+     }
+     &:disabled{
+        border: 2px solid #ABABAB;
+     }
+}
+    
+.contacts-button-location{
+    margin: 0;
+    width: 196px;
+    height: 42px;
+    display: inline-block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: #F8D24E;
+    border-radius: 10px;
+    border: transparent;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    &:hover{ 
+        background-color: #0A8817;
+        
+     }
+     &:focus{
+        color: #FFFFFF;
+        background-color: #0A8817;
+     }
+     &:disabled{
+        background-color: #ABABAB;
+     }
+}
+
+
+.contacts-main-link{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 160%;
+
+    text-decoration: none;
+
+     color: #131313;
+     &:hover{ 
+        color: #D6936D;
+     text-decoration: underline;
+     }
+     &:focus{
+        color: #D6936D;
+     text-decoration: underline;
+     }
+     @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 150%;
+      }
+      @media screen and (min-width: 1200px) {
+        font-size: 16px;
+      }
+}
