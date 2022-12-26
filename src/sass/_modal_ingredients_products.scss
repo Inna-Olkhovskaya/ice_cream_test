@@ -5,19 +5,19 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
     transition: opacity 250ms linear, visibility 250ms linear;
+    overflow: auto;
 }
 
 .modal-ingredients {
     width: 280px;
+    position: relative;
+    z-index: 1;
     background: #FCFCFC;
     border: 2px solid #F8D24E;
     border-radius: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scaleX(1);
     transition: transform 300ms linear;
     padding: 20px;
+    margin: 20px auto;
     @media screen and (min-width: 768px) {
         width: 568px;
         min-height: 581px;
