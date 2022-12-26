@@ -224,7 +224,9 @@
     fill: #84A178;
 }
 
-.footer-social-link:hover, 
+.footer-social-link:hover .footer-social-icon {
+    fill: #FCFCFC;
+}
 .footer-social-link:focus .footer-social-icon {
     fill: #FCFCFC;
 }
