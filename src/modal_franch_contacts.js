@@ -16,9 +16,9 @@
 
 (() => {
   const refs = {
-    openMenuBtn: document.querySelector('[data-modal-open]'),
-    closeMenuBtn: document.querySelector('[data-modal-close]'),
-    menu: document.querySelector('[data-modal]'),
+    openMenuBtn: document.querySelector('[data-franchise-modal-open]'),
+    closeMenuBtn: document.querySelector('[data-franchise-modal-close]'),
+    menu: document.querySelector('[data-franchise-modal]'),
     body: document.querySelector('body'),
     menuList: document.querySelector('.menu-list'),
   };
