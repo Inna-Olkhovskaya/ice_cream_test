@@ -1,17 +1,40 @@
 .contacts{
-    padding-top: 40px;
+    // padding-top: 40px;
     padding-bottom: 60px;
-    background-color: #84A178;
-    @media screen and (min-width: 768px) {
-        padding-top: 80px;
-        padding-bottom: 40px;
-      }
+    // background-color: #84A178;
+    // @media screen and (min-width: 768px) {
+    //     padding-top: 80px;
+    //     padding-bottom: 40px;
+    //   }
     
-      @media screen and (min-width: 1200px) {
-        padding-top: 100px;
-        padding-bottom: 120px;
+    //   @media screen and (min-width: 1200px) {
+    //     padding-top: 100px;
+    //     padding-bottom: 120px;
+    //   }
+    background-image: linear-gradient(
+      to top, #84A178 76%,transparent 1%),
+      url(../images/bg_products_mobile.jpg);
+      background-repeat: no-repeat;
+      background-size:cover;
+      
+      @media screen and (min-width:768px) {
+          background-image: linear-gradient(
+          to top, #84A178 55%,transparent 1%),
+          url(../images/bg_products_tablet.jpg);
+          
+          padding-bottom: 40px;
       }
-}
+  
+      @media screen and (min-width:1200px) {
+          background-image: linear-gradient(
+              to top, #84A178 83%,transparent 1%),
+              url(../images/bg_products_desktop.jpg); 
+
+              padding-bottom: 120px;
+      }
+      
+    }
+
 .container-contacts{
     @media screen and (min-width: 768px) {
         padding-left: 32px;
