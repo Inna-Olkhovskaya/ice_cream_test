@@ -18,9 +18,9 @@
       background-size:cover;
       
       @media screen and (min-width:768px) {
-          background-image: linear-gradient(
-          to top, #84A178 55%,transparent 1%),
-          url(../images/bg_products_tablet.jpg);
+        background-image: linear-gradient(
+              to top, #84A178 55%,transparent 1%),
+              url(../images/bg_products_tablet.jpg);
           
           padding-bottom: 40px;
       }
@@ -230,10 +230,13 @@ color: #ABABAB;
       }
   }
   .contacts-button-franchise{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     width: 196px;
     height: 42px;
-    display: inline-block;
+    
     padding-top: 12px;
     padding-bottom: 12px;
     background-color: transparent;
@@ -252,6 +255,7 @@ color: #ABABAB;
      }
      &:focus{
         color: #FFFFFF;
+        fill: #FFFFFF;
         border: 2px solid #0A8817;
      }
      &:disabled{
@@ -260,10 +264,14 @@ color: #ABABAB;
 }
     
 .contacts-button-location{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
     margin: 0;
     width: 196px;
     height: 42px;
-    display: inline-block;
+    
     padding-top: 12px;
     padding-bottom: 12px;
     background: #F8D24E;
@@ -281,6 +289,7 @@ color: #ABABAB;
      }
      &:focus{
         color: #FFFFFF;
+        fill:  #FFFFFF;
         background-color: #0A8817;
      }
      &:disabled{
@@ -314,4 +323,7 @@ color: #ABABAB;
       @media screen and (min-width: 1200px) {
         font-size: 16px;
       }
+}
+.contacts-icon{
+  margin-left: 7px;
 }
