@@ -1,0 +1,38 @@
+.gallery__thumb{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    
+   }
+   .gallery__thumb > div{
+      border-radius: 8px;
+       width: 100%;
+       height: 100%;
+       position: absolute;
+       animation: animate 25s infinite;
+       opacity: 0;
+       background-size: cover;
+       background-position: center center;
+       @media screen and(min-width:768px) {
+        border-radius: 18px;
+       }
+       @media screen and(min-width:1200px) {
+        border-radius: 24px;
+    }
+   }
+   .gallery__thumb > div:nth-child(2){
+   animation-delay: 5s;
+   }
+   .gallery__thumb > div:nth-child(3){
+       animation-delay: 10s;
+   }
+   @keyframes animate{
+       40%{
+           opacity: 1;
+       }
+       80%{
+           opacity: 0;
+       }
+   }
+   
