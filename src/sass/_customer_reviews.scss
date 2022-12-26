@@ -132,10 +132,19 @@
 
 .swiper-button-next,
 .swiper-button-prev {
-   
+    opacity: 0;
     padding-top:5px;
     padding-bottom:50px;
-    color: white !important;
+    
+
+    @media screen and (min-width:768px) {
+        color: white !important;        opacity: 1;
+    }
+
+    @media screen and (min-width:1200px) {
+        color: white !important;
+        opacity: 1;
+    }
     
 }
 
