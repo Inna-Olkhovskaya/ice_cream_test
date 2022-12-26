@@ -131,6 +131,7 @@ header {
 
 .mob-nav-link {
     text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mob-nav-link:hover,
@@ -303,7 +304,8 @@ header {
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
-    color: var(--white-text-color);
+    color: #FCFCFC;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:focus,
     &:hover {
