@@ -8,8 +8,21 @@
                 </svg>
             </button>
             <p class="modal-title">Buy now</p>
-            <ul class="product-list list">
-                <li class="product-item">
+            <ul class="product-list">
+                <li class="product-item">                    
+                    <input type="checkbox" class="product-input hide" name="fillter" id="icecream"/>
+                    <label for="icecream" class="product-btn">ice cream</label>
+                </li>
+                <li class="product-item">                    
+                    <input type="checkbox" class="product-input hide" name="fillter" id="icecoffee"/>
+                    <label for="icecoffee" class="product-btn">ice coffee</label>
+                </li>
+                <li class="product-item">                    
+                    <input type="checkbox" class="product-input hide" name="fillter" id="milkshake"/>
+                    <label for="milkshake" class="product-btn">milkshake</label>
+                </li>
+
+                <!-- <li class="product-item">
                     <p class="product-name icon-ice">ice cream</p>
                     
                 </li>               
@@ -20,18 +33,18 @@
                 <li class="product-item">
                     <p class="product-name icon-ice">milkshake</p>
                    
-                </li>               
+                </li> -->               
             </ul>
-        <form class="modal-form">
-            <input type="text" name="user-name" class="modal-input" placeholder="Name" required>
-            <input type="tel" name="user-tel" class="modal-input" placeholder="Phone" required title="+380 (96) 555-55-55" pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" ">
+        <form class="modal-product-form">
+            <input type="text" name="user-name" class="modal-product-input" placeholder="Name" required>
+            <input type="tel" name="user-tel" class="modal-product-input" placeholder="Phone" required title="+380 (96) 555-55-55" pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" ">
             <div class="modal-fild">
                 <label for="user-text" class="input-label"></label> 
-                <textarea name="user-text" id="user-text" class="modal-content" placeholder="Content"></textarea>
+                <textarea name="user-text" id="user-text" class="modal-product-content" placeholder="Content"></textarea>
             </div>
 
         </form>
-        <button type="submit" class="modal-button">Submit</button>    
+        <button type="submit" class="modal-product-button">Submit</button>    
          </div>    
     </div>
    
