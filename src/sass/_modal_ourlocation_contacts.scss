@@ -1,0 +1,141 @@
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+
+.overlay {
+    position: fixed;
+    opacity: 1;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.837);
+}
+
+.modal-location {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 280px;
+    // min-height: 365px;
+    // background: #fcfcfc;
+    border-radius: 10px;
+    border: 2px solid #F8D24E;
+    background-color: #fcfcfc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media screen and (min-width: 768px) {
+        width: 568px;
+    }
+
+
+}
+
+.modal-location__close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &:focus,
+    &:hover {
+        fill: #0A8817;
+    }
+}
+
+.modal-location__title {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 28px;
+
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+
+    color: #131313;
+
+    @media screen and (min-width: 768px) {
+        margin: 32px;
+        font-size: 20px;
+        line-height: 1.4;
+
+    }
+
+}
+
+.modal-location__image {
+
+    display: flex;
+    margin: 0 auto;
+
+    width: 224px;
+    height: 199px;
+    border-radius: 10px;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 768px) {
+
+        width: 448px;
+        height: 260px;
+
+    }
+}
+
+.modal-location__button {
+
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 134px;
+    height: 42px;
+    background: #F8D24E;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 29px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    // display: flex;
+    // align-items: center;
+    // text-align: center;
+
+    @media screen and (min-width: 768px) {
+
+        font-size: 14px;
+        line-height: 1.2;
+        width: 145px;
+    }
+
+             &:hover,
+             &:focus {
+            background-color: #0A8817;
+            }
+}
+
+
+
