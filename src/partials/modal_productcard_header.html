@@ -1,36 +1,72 @@
-    <div class="backdrop is-hidden" data-modal-ice>
-        <div class="modal">
-            <button type="button" class="modal-close" data-modal-ice-close>
-                <svg class="modal-close-icon" width="20" height="20">
-                    <use 
-                        href="./images/symbol-defs.svg#icon-eva_menu__close">
-                    </use>
-                </svg>
-            </button>
-            <p class="modal-title">Buy now</p>
-            <ul class="product-list">
-                <li class="product-item">                    
-                    <input type="checkbox" class="product-input hide" name="filter" id="icecream">
-                    <label for="icecream" class="product-btn">ice cream</label>
-                </li>
-                <li class="product-item">                    
-                    <input type="checkbox" class="product-input hide" name="filter" id="icecoffee">
-                    <label for="icecoffee" class="product-btn">ice coffee</label>
-                </li>
-                <li class="product-item">                    
-                    <input type="checkbox" class="product-input hide" name="filter" id="milkshake">
-                    <label for="milkshake" class="product-btn">milkshake</label>
-                </li>               
-            </ul>
-        <form class="modal-product-form">
-            <input type="text" name="user-name" class="modal-product-input" placeholder="Name" required>
-            <input type="tel" name="user-tel" class="modal-product-input" placeholder="Phone" required title="+380 (96) 555-55-55" pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"  >
-            <div class="modal-fild">
-                <label for="user-text" class="input-label"></label> 
-                <textarea name="user-text" id="user-text" class="modal-product-content" placeholder="Content"></textarea>
-            </div>
+<div class="backdrop" data-modal-productcard>
+    <div class="modal-ingredients">
+        <button type="button" class="modal-ingredients-close" data-modal-productcard-close>
+            <svg class="modal-close-icon" weight="13" height="13">
+                <use href="./images/symbol-defs.svg#icon-eva_menu__close"></use>
+            </svg>
+        </button>
+
+        <p class="modal-productcard-title">Buy now</p>
+
+        <ul class="modal-product-list">
+            <li class="modal-product-item">                    
+                <input type="checkbox" class="product-input hide" name="filter" id="icecream">
+                <label for="icecream" class="product-btn">ice cream</label>
+                <div class="modal-product-wrap">
+                    <div class="modal-productcard-image-wrap">
+                        <picture>
+                            <source 
+                                srcset="./images/modal_ingredients/chololate_icecream.png 1x, 
+                                ./images/modal_ingredients/chololate_icecream_2x.png 2x">
+                                <img class="modal-productcard-image" 
+                                src="./images/modal_ingredients/chololate_icecream.png" 
+                                alt="Chololate icecream" width="132">
+                        </picture>
+                    </div>
+                </div>
+            </li>
+            
+            <li class="modal-product-item">                    
+                <input type="checkbox" class="product-input hide" name="filter" id="coffee">
+                <label for="coffee" class="product-btn btn-coffee coffee">ice coffee</label>
+                <div class="modal-product-wrap">
+                    <div class="modal-productcard-image-wrap coffee-color">
+                        <picture>
+                            <source 
+                            srcset="./images/modal_ingredients/ice_coffee.png 1x, 
+                            ./images/modal_ingredients/ice_coffee_2x.png 2x">
+                            <img class="ingredients-image" 
+                            src="./images/modal_ingredients/ice_coffee.png" 
+                            alt="Ice coffee" width="132">
+                        </picture>
+                    </div>
+                </div>
+            </li>
+
+            <li class="modal-product-item">                    
+                <input type="checkbox" class="product-input hide" name="filter" id="milkshakes">
+                <label for="milkshakes" class="product-btn btn-milkshakes milkshakes">milkshake</label>
+                <div class="modal-product-wrap">
+                    <div class="modal-productcard-image-wrap milkshakes-color">
+                        <picture>
+                            <source 
+                            srcset="./images/modal_ingredients/milkshakes.png 1x, 
+                            ./images/modal_ingredients/milkshakes_2x.png 2x">
+                            <img class="ingredients-image" 
+                            src="./images/modal_ingredients/milkshakes.png" 
+                            alt="Strawberry milkshakes" width="132">
+                        </picture>
+                    </div>
+                </div>
+            </li>           
+        </ul>
+       
+        <form action="#" class="modal-productcard-form">
+            <input type="text" class="modal-productcard-input" name="user-name" id="user-name" placeholder="Name" required>
+            <input type="text" class="modal-productcard-input" name="user-tel" id="user-tel" placeholder="Phone" required>
+            <textarea name="comment" id="user-comment" placeholder="Comment"
+                class="modal-productcard-comment"></textarea>
+            <button type="submit" class="modal-productcard-button">Submit</button>
         </form>
-        <button type="submit" class="modal-product-button">Submit</button>    
-         </div>    
     </div>
-   
+</div>

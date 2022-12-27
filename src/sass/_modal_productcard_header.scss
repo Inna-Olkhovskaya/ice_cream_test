@@ -1,184 +1,260 @@
-.is-hidden{
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-} 
-
-.backdrop{
+.backdrop {
     position: fixed;
-    opacity: 1;
-    z-index: 10;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.837);
+    background: rgba(0, 0, 0, 0.2);
+    transition: opacity 250ms linear, visibility 250ms linear;
+    overflow: auto;
+    z-index: 20;
 }
-.modal{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+.modal-productcard {
     width: 280px;
-    min-height: 550px; 
-    background: #fcfcfc;
-    border-radius: 10px;    
+    position: relative;
+    background: #FCFCFC;
     border: 2px solid #F8D24E;
-    background-color: #fcfcfc;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    border-radius: 10px;
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 20px;
+    margin: 20px auto;
+    @media screen and (min-width: 768px) {
+        width: 568px;
+        min-height: 581px;
+        padding: 32px 40px;
+    }
 }
 
-.modal-close{    
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
+// .backdrop.is-hidden .modal-productcard {
+//     transform: translate(-50%, -50%) scaleX(0);
+// }
+
+.modal-productcard-close {
+    width: 20px;
+    height: 20px;
+    background: transparent;
     border: none;
-    cursor: pointer;
-}
-
-.modal-title{
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    margin: 28px auto 20px;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    padding: 0;
+    @media screen and (min-width: 768px) {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.modal-close-icon {
+    width: 13px;
+    height: 13px;
+    fill: #131313;
+    @media screen and (min-width: 768px) {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+.modal-productcard-title {
     font-family: 'Seymour One';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: calc(24 / 16);    
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: center;
     color: #131313;
+    margin-bottom: 83px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 103px;
+    }
 }
 
-.prodlist{
-    text-decoration: none;
-}
-
-.product-list{
+.modal-product-list {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 83px; 
+    gap: 82px; 
     margin-bottom: 32px;
-    
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        gap: 32px;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
 } 
 
-.product-item{
-    align-items: center;    
-    justify-content: center;
-    margin: 0 83px;
+.modal-product-item {
     width: 132px;
     height: 136px;
-    border: 2px solid #96AF8C;
-    filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
-    border-radius: 15px;
+    align-items: center;    
+    justify-content: center;
     position: relative;    
 }
 
-
-.product-name {
-    font-family: 'Montserrat';
-    font-style: normal;
+.product-btn {
+    width: 132px;
+    height: 136px;
+    position: absolute;
+    border: 2px solid #96AF8C;
+    border-radius: 15px;
+    padding-top: 95px;
+    padding-bottom: 20px;
     font-weight: 700;
     font-size: 16px;
-    line-height: calc(20 / 16);
+    line-height: 20px;
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    padding-top: 50px;
     color: #131313;
-    
+    .product-input:checked + & {
+        background: #9CBE8F;
+        border-color: transparent;
+        color: #ffffff;
+    } 
 }
 
-   /* &--ice::before {
-      content: '';
-      background-image: url(../images/cream_mob.jpg);
-      background-position: center;
-      position: absolute;
-      repeat: no-repeat;
-      top: -220px;
-      display: block;
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      margin: 0 auto;
-
-      @media screen and (min-width: 480px) {
-        right: 78px;
-      }
+.btn-coffee {
+    .product-input:checked + & {
+        background: #EFD478;
+        box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+        border: transparent;
     }
-}*/
-.modal-product-form{  
+}
+
+.btn-milkshakes {
+    .product-input:checked + & {
+        background: #D6936D;
+        box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+        border: transparent;
+    }
+}
+
+.modal-product-wrap {
+    position: absolute;
+    top: -59px;
+}
+
+.modal-productcard-image-wrap {
+    width: 132px;
+    height: 132px;
     display: flex;
-    flex-direction: column;
-    margin-left: 32px;
-    margin-right: 32px;
+    margin: 0 auto;
+    border-radius: 66px;
+    background: #AEC6A5;
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+    position: relative;
 }
 
-
-
-.modal-product-input{
-    width: 100%;
-    height: 32px;
-    background: rgba(248, 210, 78, 0.1);
-    border: 1px solid #84A178;
-    border-radius: 10px;
-    margin-bottom: 12px;   
-    padding-left: 12px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 140%;
-    color: #131313;
-
-}
-.modal-product-input,
-.modal-product-content::placeholder{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 140%;
-    color: #131313;
-}
-.modal-product-input:not(:focus):not(:placeholder-shown):invalid{
-    background-color: rgba(206, 99, 75, 0.495);
+.modal-productcard-image {
+    position: absolute;
+    top: -7px;
 }
 
-.modal-product-content{
-    width: 100%;
-    height: 65px;
-    background: rgba(248, 210, 78, 0.1);
-    border: 1px solid #84A178;
-    border-radius: 10px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 140%;
-    color: #131313;
-    margin-bottom: 26px;
-    padding-left: 12px;
-    resize: none;
+.modal-productcard-form {
+    margin: 0 auto;
+    @media screen and (min-width: 768px) {
+        width: 368px;
+    }
 }
 
-.modal-product-button{ 
-    margin-left: auto; 
-    margin-right: auto;  
-    width: 114px;
+.modal-productcard-input {
     height: 42px;
-    background: #F8D24E;
-    border: none;
+    width: 100%;
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84A178;
     border-radius: 10px;
-    margin-bottom: 29px;
+    padding: 11px;
+    font-size: 14px;
+    line-height: 1.42;
+    color: #131313;
+    margin-bottom: 16px;
+}
+
+.modal-productcard-comment {
+    width: 100%;
+    min-height: 84px;
+    resize: none;
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84A178;
+    border-radius: 10px;
+    padding: 11px;
+    font-size: 14px;
+    line-height: 1.42;
+    color: #131313;
+    margin-bottom: 24px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 32px;
+    }
+}
+
+.modal-productcard-button {
+    width: 132px;
+    height: 42px;
+    display: flex;
     justify-content: center;
+    align-items: center;
     cursor: pointer;
-   
+    background: #F8D24E;
+    border-radius: 10px;
+    border: none;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    color: #131313;
+        &:hover {
+            background-color: #9CBE8F;
+        }
+        &:focus {
+            background-color: #9CBE8F;
+            color: #ffffff;
+        }
+    @media screen and (min-width: 768px) {
+        width: 121px;
+    }
+}
+
+.coffee-color {
+    background: #EFD478;
+    box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+    border: transparent;
+}
+
+.coffee {
+    border: 2px solid #F8D24E;
+}
+
+.milkshakes-color {
+    background: #D6936D;
+    box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+    border: transparent;
+}
+
+.milkshakes {
+    border: 2px solid #D6936D;
+}
+// .is-hidden {
+//   opacity: 0;
+//   visibility: hidden;
+//   pointer-events: none;
+// }
+
+.hide {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: insent(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal;
 }
