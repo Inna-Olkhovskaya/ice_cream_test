@@ -213,6 +213,32 @@
         opacity: 1;
     }
 }
+
+@keyframes slideIn {
+    from {
+        bottom: 500px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+
+
+@keyframes slidein {
+    from {
+        left: 500px;
+        opacity: 0
+    }
+
+    to {
+        left: 0;
+        opacity: 1
+    }
+}
 .ice-cream-img {
     position: absolute;
     bottom: 0;
@@ -223,7 +249,8 @@
     width: 177px;
     height: 217px;
    
-
+    animation-name: slideIn;
+    animation-duration: 0.9s;
     @media screen and (min-width:768px) {
         left: 70%;
         width: 268px;
@@ -245,8 +272,9 @@
     width: 100vw;
     height: auto;
     opacity: 1;
-    
-    animation: switching 25s infinite;
+
+    animation: slidein 0.7s;
+    animation: switching 25s infinite 0.7s;
     
 
     @media screen and (min-width:460px) {
