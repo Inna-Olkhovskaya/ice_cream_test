@@ -13,14 +13,14 @@
     //     padding-bottom: 120px;
     //   }
     background-image: linear-gradient(
-      to top, #84A178 76%, transparent 24%);
+      to top, #84A178 24%, #84A178 76%, transparent 76%);
       // url(../images/bg_products_mobile.jpg);
       background-repeat: no-repeat;
       background-size:cover;
       
       @media screen and (min-width:768px) {
         background-image: linear-gradient(
-              to top, #84A178 55%, transparent 45%);
+              to top, #84A178 45%, #84A178 55%, transparent 55%);
               // url(../images/bg_products_tablet.jpg);
           
           padding-bottom: 40px;
@@ -29,8 +29,8 @@
       }
   
       @media screen and (min-width:1200px) {
-          background-image: linear-gradient(
-              to top, #84A178 83%, transparent 17%);
+        background-image: linear-gradient(
+          to top, #84A178 17%, #84A178 83%, transparent 83%);
               // url(../images/bg_products_desktop.jpg); 
 
               padding-bottom: 120px;
