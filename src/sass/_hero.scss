@@ -68,6 +68,7 @@
 
     &-link {
         font-family: 'Montserrat';
+        z-index:4;
         font-style: normal;
         font-weight: 600;
         font-size: 12px;
@@ -170,6 +171,7 @@
 
 .hero-link-products {
     display: block;
+    z-index: 4;
     border: 2px solid #F8D24E;
     border-radius: 8px;
     min-width: 108px;
