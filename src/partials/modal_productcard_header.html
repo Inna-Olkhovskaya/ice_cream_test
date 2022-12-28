@@ -32,12 +32,12 @@
                 <div class="modal-product-wrap">
                     <div class="modal-productcard-image-wrap coffee-color">
                         <picture>
-                            <source 
+                            <!-- <source 
                             srcset="./images/modal_ingredients/ice_coffee.png 1x, 
                             ./images/modal_ingredients/ice_coffee_2x.png 2x">
                             <img class="ingredients-image" 
                             src="./images/modal_ingredients/ice_coffee.png" 
-                            alt="Ice coffee" width="132">
+                            alt="Ice coffee" width="132"> -->
                         </picture>
                     </div>
                 </div>
@@ -49,12 +49,12 @@
                 <div class="modal-product-wrap">
                     <div class="modal-productcard-image-wrap milkshakes-color">
                         <picture>
-                            <source 
+                            <!-- <source 
                             srcset="./images/modal_ingredients/milkshakes.png 1x, 
                             ./images/modal_ingredients/milkshakes_2x.png 2x">
                             <img class="ingredients-image" 
                             src="./images/modal_ingredients/milkshakes.png" 
-                            alt="Strawberry milkshakes" width="132">
+                            alt="Strawberry milkshakes" width="132"> -->
                         </picture>
                     </div>
                 </div>
@@ -62,8 +62,9 @@
         </ul>
        
         <form action="#" class="modal-productcard-form">
-            <input type="text" class="modal-productcard-input" name="user-name" id="user-name" placeholder="Name" required>
-            <input type="text" class="modal-productcard-input" name="user-tel" id="user-tel" placeholder="Phone" required>
+            <input type="text" class="modal-productcard-input" name="user-name" id="user-name" minlength="2" placeholder="Name" required>
+            <input type="tel" class="modal-ingredients-input" name="user-tel" id="user-tel" placeholder="Phone" 
+            required title="+380 (96) 555-55-55" pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" required>
             <textarea name="comment" id="user-comment" placeholder="Comment"
                 class="modal-productcard-comment"></textarea>
             <button type="submit" class="modal-productcard-button">Submit</button>
