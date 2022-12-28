@@ -226,9 +226,11 @@
 
 .footer-social-link:hover .footer-social-icon {
     fill: #FCFCFC;
+    transition: fill 250ms cubic-bezier(0.22, 0.83, 0.62, 0.13);
 }
 .footer-social-link:focus .footer-social-icon {
     fill: #FCFCFC;
+    transition: fill 250ms cubic-bezier(0.22, 0.83, 0.62, 0.13);
 }
 
 .footer-contact {
