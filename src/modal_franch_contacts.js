@@ -3,22 +3,22 @@
     ouvrirMenu: document.querySelector('[data-franchise-modal-open]'),
     fermerMenu: document.querySelector('[data-franchise-modal-close]'),
     menues: document.querySelector('[data-franchise-modal]'),
-    corps: document.querySelector('body'),
+    corp: document.querySelector('body'),
     menuesLists: document.querySelector('.menu-list'),
   };
 
   refs.ouvrirMenu.addEventListener('click', toggleMenu);
   refs. fermerMenu.addEventListener('click', toggleMenu);
-  refs.menuesLists.addEventListener('click', removeMenu);
+  // refs.menuesLists.addEventListener('click', removeMenu);
 
   function toggleMenu() {
     refs.menues.classList.toggle('is-hidden');
-    refs.corps.classList.toggle('no-scroll');
+    refs.corp.classList.toggle('no-scroll');
   }
 
   function removeMenu() {
     refs.menues.classList.add('is-hidden');
-    refs.corps.classList.remove('no-scroll');
+    refs.corp.classList.remove('no-scroll');
   }
 })();
 
