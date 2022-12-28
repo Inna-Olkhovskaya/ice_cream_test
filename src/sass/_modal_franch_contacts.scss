@@ -49,6 +49,9 @@
     cursor: pointer;
     margin: 16px;
     right: 0;
+    // top: 12px;
+    //     right: 12px;
+    //     padding: 0;
 
         &:focus,
         &:hover {
@@ -56,6 +59,7 @@
             }
 
 }
+
 
 .modal-fanchise__title {
 
