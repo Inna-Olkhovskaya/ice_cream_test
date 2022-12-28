@@ -1,22 +1,5 @@
 
 
-.customer-review-overlay {
-    background-image: 
-    url(../images/bg_products_mobile.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    
-    @media screen and (min-width:768px) {
-        background-image: 
-        url(../images/bg_products_tablet.jpg);
-    }
-
-    @media screen and (min-width:1200px) {
-        background-image:
-            url(../images/bg_products_desktop.jpg); 
-    }
-    
-  }
 
 .swiper {
 
@@ -31,13 +14,6 @@
   scroll-snap-points-x: repeat(300px);
   scroll-snap-type: mandatory;
 }
-
-.swiper-slide{
-    /* make sure the width is honored */
- 
-    
-}
-
 
 
 
@@ -130,23 +106,7 @@
     color: #131313;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-    opacity: 0;
-    padding-top:5px;
-    padding-bottom:50px;
-    
 
-    @media screen and (min-width:768px) {
-        color: white !important;        opacity: 1;
-    }
-
-    @media screen and (min-width:1200px) {
-        color: white !important;
-        opacity: 1;
-    }
-    
-}
 
 .swiper-pagination {
 	margin: 100px 0;
