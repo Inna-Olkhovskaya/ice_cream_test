@@ -1,6 +1,17 @@
 body {
   font-family: 'Montserrat', sans-serif;
   color: #fcfcfc;
+  background-image: url(../images/bg_products_mobile.jpg);
+ 
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/bg_products_tablet.jpg);
+  }
+
+  @media screen and (min-width: 1200px) {
+    
+    background-image: url(../images/bg_products_desktop.jpg);
+  }
+}
 
 .header,
 .hero {
@@ -49,4 +60,4 @@ body {
 
 .no-scroll {
   overflow: hidden;
-}}
+}
