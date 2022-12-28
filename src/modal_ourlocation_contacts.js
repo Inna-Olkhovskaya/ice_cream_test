@@ -27,13 +27,13 @@
     Ouvrir: document.querySelector('[data-location-modal-open]'),
     Fermer: document.querySelector('[data-location-modal-close]'),
     menue: document.querySelector('[data-location-modal]'),
-    body: document.querySelector('body'),
+    corps: document.querySelector('body'),
     menueListe: document.querySelector('.menu-list'),
   };
 
   refs.Ouvrir.addEventListener('click', toggleMenu);
   refs.Fermer.addEventListener('click', toggleMenu);
-  refs.menueListe.addEventListener('click', removeMenu);
+  // refs.menueListe.addEventListener('click', removeMenu);
 
   function toggleMenu() {
     refs.menue.classList.toggle('is-hidden');

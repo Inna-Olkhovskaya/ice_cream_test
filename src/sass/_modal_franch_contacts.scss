@@ -78,12 +78,17 @@
     justify-content: center;
 
     margin-bottom: 20px;
+    margin-top: 28px;
+
+    max-width: 221px;
 
         @media screen and (min-width: 768px) {
             margin-bottom: 24px;
                 font-size: 20px;
                 line-height: 1.4;
                 max-width: 332px;
+
+                margin-top: 32px;
         
             }
 
@@ -105,12 +110,14 @@
 
     margin-bottom: 24px;
 
+    max-width: 222px;
+
 
             @media screen and (min-width: 768px) {
                     margin-bottom: 32px;
                     font-size: 16px;
                     line-height: 1.4;
-                    max-width: 448px;
+                    width: 448px;
                 }
 }
 
@@ -143,6 +150,7 @@
     padding-left: 12px;
 
     margin-bottom: 24px;
+    width: 224px;
 
         @media screen and (min-width: 768px) {
             max-width: 368px;
@@ -154,6 +162,7 @@
 .modal-fanchise__textarea {
 
     width: 100%;
+    max-width: 224px;
     height: 64px;
     padding: 8px 12px;
 
@@ -201,12 +210,16 @@
     margin-left: auto;
     margin-right: auto;
 
+    margin-bottom: 28px;
+
     cursor: pointer;
 
             @media screen and (min-width: 768px) {
                     max-width: 121px;
                     font-size: 14px;
                     line-height: 1.2;
+
+                    margin-bottom: 32px;
                 }
 
 }
