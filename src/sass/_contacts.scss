@@ -191,6 +191,20 @@ color: #ABABAB;
   }
 
   }
+  #cont{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-top: 1px solid #E1E1E1;
+    border-bottom: 1px solid #E1E1E1;
+    @media screen and (min-width: 768px) {
+        margin-top: 32px;
+        margin-bottom: 32px;
+        padding-top: 32px;
+    padding-bottom: 32px;
+      }
+  }
   
   .contacts-workingdays{
     margin-top: 24px;
