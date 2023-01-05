@@ -13,16 +13,6 @@ body {
   }
 }
 
-body a{
-  & a,
-  & a *,
-  & button,
-  & button * {
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.22, 0.83, 0.62, 0.13);
-  }
-}
-
 .header,
 .hero {
   background-color: #84a178;
