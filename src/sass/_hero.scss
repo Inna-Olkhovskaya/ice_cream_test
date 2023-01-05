@@ -68,13 +68,14 @@
 
     &-link {
         font-family: 'Montserrat';
+        z-index:4;
         font-style: normal;
         font-weight: 600;
         font-size: 12px;
         line-height: calc(15/12);
         color: #F8D24E;
 
-        transition: color 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: color 250ms cubic-bezier(0.22, 0.83, 0.62, 0.13);
         &:hover {
                 color:#0A8817;;
             }
@@ -170,6 +171,7 @@
 
 .hero-link-products {
     display: block;
+    z-index: 4;
     border: 2px solid #F8D24E;
     border-radius: 8px;
     min-width: 108px;
@@ -181,8 +183,8 @@
     font-size: 12px;
     color: #131313;
 
-    transition: border 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 
-    color 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: border 250ms cubic-bezier(0.22, 0.83, 0.62, 0.13)
+    color 250ms cubic-bezier(0.22, 0.83, 0.62, 0.13);
  &:hover{
     border: 2px solid rgba(10, 136, 23, 1);
  }

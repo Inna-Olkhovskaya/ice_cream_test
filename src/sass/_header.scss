@@ -215,8 +215,8 @@ header {
 
         min-width: 152px;
     
-        transition: background-color 250ms cubic-bezier(0.165, 0.84, 0.44, 1) 
-        color 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: background-color 250ms cubic-bezier(0.22, 0.83, 0.62, 0.13)
+        color 250ms cubic-bezier(0.22, 0.83, 0.62, 0.13);
 
         &:hover {
                 background-color: rgba(10, 136, 23, 1);
@@ -264,8 +264,8 @@ header {
         font-size: 14px;
         line-height: 17px;
         text-decoration: none;
-        transition: background-color 250ms cubic-bezier(0.165, 0.84, 0.44, 1) 
-        color 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: background-color 250ms cubic-bezier(0.22, 0.83, 0.62, 0.13) 
+        color 250ms cubic-bezier(0.22, 0.83, 0.62, 0.13);
 &:hover {
         background-color: rgba(10, 136, 23, 1);
         cursor: pointer;
@@ -323,8 +323,9 @@ header {
     font-weight: 600;
     font-size: 14px;
     line-height: calc(17/14);
-    transition: background-color 250ms cubic-bezier(0.165, 0.84, 0.44, 1) 
-        color 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: background-color 250ms cubic-bezier(0.22, 0.83, 0.62, 0.13)
+        color 250ms cubic-bezier(0.22, 0.83, 0.62, 0.13) 
+        fill  250ms cubic-bezier(0.22, 0.83, 0.62, 0.13);
 
          &:hover {
         background-color: rgba(10, 136, 23, 1);
@@ -354,9 +355,11 @@ header {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
     color: #FCFCFC;
+    transition: background-color 250ms cubic-bezier(0.22, 0.83, 0.62, 0.13) 
+    color 250ms cubic-bezier(0.22, 0.83, 0.62, 0.13);
 
     &:focus,
     &:hover {
